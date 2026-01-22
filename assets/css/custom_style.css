@@ -1,0 +1,61 @@
+/* Category Filters */
+.category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-primary);
+    background: transparent;
+    color: var(--color-primary);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--color-primary);
+    color: white;
+}
+
+/* Product Card Updates */
+.product-card {
+    display: flex;
+    /* Flex to allow content alignment */
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.product-card h3 {
+    margin: var(--spacing-xs) 0;
+    font-size: 1.2rem;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: var(--color-text-main);
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.add-cart-btn {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: auto;
+    transition: background 0.3s;
+}
+
+.add-cart-btn:hover {
+    background-color: #34495e;
+}

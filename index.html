@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Force - Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="assets/images/logo.svg" alt="Computer Force Logo" class="logo-img">
+        </a>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <!-- Mobile Toggle Buttons -->
+            <div class="mobile-controls">
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                    ☰
+                </button>
+                <button id="bag-toggle" class="bag-toggle cart-toggle" aria-label="Toggle Purchases"
+                    aria-expanded="false">
+                    🛍️
+                </button>
+            </div>
+        </div>
+
+        <div id="nav-content" class="nav-links-search">
+            <ul class="nav-links">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="search-area">
+                <label for="search-input" class="visually-hidden" style="display:none;">Search</label>
+                <input type="text" id="search-input" class="search-input" placeholder="Search...">
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-wrapper">
+        <main>
+            <h1>Welcome to Computer Force</h1>
+            <p class="subtitle">Computer Force is your online expert in all things computing</p>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <h2>Computers</h2>
+                    <a href="products.html#computers">
+                        <img src="assets/images/computers.png" alt="Computers Category"
+                            onerror="this.src='assets/images/computers.svg'">
+                    </a>
+                </div>
+                <div class="product-card">
+                    <h2>Laptops</h2>
+                    <a href="products.html#laptops">
+                        <img src="assets/images/laptops.png" alt="Laptops Category"
+                            onerror="this.src='assets/images/laptops.svg'">
+                    </a>
+                </div>
+                <div class="product-card">
+                    <h2>Monitors</h2>
+                    <a href="products.html#monitors">
+                        <img src="assets/images/monitors.png" alt="Monitors Category"
+                            onerror="this.src='assets/images/monitors.svg'">
+                    </a>
+                </div>
+                <div class="product-card">
+                    <h2>Printing & scanning</h2>
+                    <a href="products.html#printing-and-scanning">
+                        <img src="assets/images/printing-and-scanning.svg" alt="Printing and Scanning Category">
+                    </a>
+                </div>
+                <div class="product-card">
+                    <h2>Software</h2>
+                    <a href="products.html#software">
+                        <img src="assets/images/software.svg" alt="Software Category">
+                    </a>
+                </div>
+                <div class="product-card">
+                    <h2>Tablets</h2>
+                    <a href="products.html#tablets">
+                        <img src="assets/images/tablets.png" alt="Tablets Category"
+                            onerror="this.src='assets/images/tablets.svg'">
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <aside id="purchases-aside">
+            <h2>Purchases</h2>
+            <table class="purchases-table">
+                <tr>
+                    <td>Test Item 1</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>Test Item 2</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$1500</strong></td>
+                </tr>
+            </table>
+            <button class="checkout-btn">Go to Checkout</button>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ferdinand. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

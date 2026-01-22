@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Force - Products</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="assets/images/logo.svg" alt="Computer Force Logo" class="logo-img">
+        </a>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <div class="mobile-controls">
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+                <button id="bag-toggle" class="bag-toggle cart-toggle" aria-label="Toggle Purchases"
+                    aria-expanded="false">🛍️</button>
+            </div>
+        </div>
+
+        <div id="nav-content" class="nav-links-search">
+            <ul class="nav-links">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="search-area">
+                <label for="search-input" class="visually-hidden" style="display:none;">Search</label>
+                <input type="text" id="search-input" class="search-input" placeholder="Search...">
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-wrapper">
+        <main>
+            <h1>Products we sell</h1>
+            <p class="subtitle">Browse our wide range of computing products below. Click a category to filter.</p>
+
+            <!-- Category Filter Buttons -->
+            <div id="category-filters" class="category-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="computers">Computers</button>
+                <button class="filter-btn" data-filter="laptops">Laptops</button>
+                <button class="filter-btn" data-filter="monitors">Monitors</button>
+                <button class="filter-btn" data-filter="printing-and-scanning">Printing & Scanning</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="tablets">Tablets</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid" id="product-list">
+
+                <!-- Computers -->
+                <div class="product-card" data-category="computers">
+                    <img src="assets/images/computers.png" alt="High-End Gaming PC"
+                        onerror="this.src='assets/images/computers.svg'">
+                    <h3>Pro Gaming PC</h3>
+                    <p class="price">$2,499.00</p>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="computers">
+                    <img src="assets/images/computers.png" alt="Office Workstation"
+                        onerror="this.src='assets/images/computers.svg'">
+                    <h3>Office Workstation</h3>
+                    <p class="price">$899.00</p>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- Laptops -->
+                <div class="product-card" data-category="laptops">
+                    <img src="assets/images/laptops.png" alt="Ultraslim Laptop"
+                        onerror="this.src='assets/images/laptops.svg'">
+                    <h3>Ultraslim Laptop 15"</h3>
+                    <p class="price">$1,299.00</p>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="laptops">
+                    <img src="assets/images/laptops.png" alt="Gaming Laptop"
+                        onerror="this.src='assets/images/laptops.svg'">
+                    <h3>Power Gaming Laptop</h3>
+                    <p class="price">$1,899.00</p>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- Monitors -->
+                <div class="product-card" data-category="monitors">
+                    <img src="assets/images/monitors.png" alt="4K Ultrawide Monitor"
+                        onerror="this.src='assets/images/monitors.svg'">
+                    <h3>4K Ultrawide Monitor</h3>
+                    <p class="price">$799.00</p>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+
+
+
+
+                <!-- Tablets -->
+                <div class="product-card" data-category="tablets">
+                    <img src="assets/images/tablets.png" alt="Pro Tablet"
+                        onerror="this.src='assets/images/tablets.svg'">
+                    <h3>Pro Tablet 11"</h3>
+                    <p class="price">$799.00</p>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- Others (Using SVGs for now) -->
+                <div class="product-card" data-category="printing-and-scanning">
+                    <img src="assets/images/printing-and-scanning.svg" alt="Laser Printer">
+                    <h3>Office Laser Printer</h3>
+                    <p class="price">$249.00</p>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="software">
+                    <img src="assets/images/software.svg" alt="Antivirus Software">
+                    <h3>Security Suite 2026</h3>
+                    <p class="price">$49.00</p>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+
+            </div>
+        </main>
+
+        <aside id="purchases-aside">
+            <h2>Purchases</h2>
+            <table class="purchases-table">
+                <tr>
+                    <td>Test Item 1</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>Test Item 2</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$1500</strong></td>
+                </tr>
+            </table>
+            <button class="checkout-btn">Go to Checkout</button>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ferdinand. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
